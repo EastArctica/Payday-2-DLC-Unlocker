@@ -11,3 +11,6 @@ I'm planning on adding the built in 'Mod Options' menu to this but this is my fi
 - Download Payday 2 Super BLT at https://superblt.znix.xyz/
 - Put the DLCUnlocker folder in the ``PAYDAY 2/mods`` folder
 - Edit the ``PAYDAY 2/mods/DLCUnlocker/UnlockDLCs.lua`` as you wish, just set the DLC you want to ``true`` instead of ``false``
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
