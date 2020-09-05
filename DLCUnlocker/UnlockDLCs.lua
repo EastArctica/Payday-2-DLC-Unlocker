@@ -131,14 +131,16 @@ local Enabled = {
 	twitch_pack = false
 }
 
+
+
+if not oldFunc then oldFunc = WINDLCManager._verify_dlcs end
 function WINDLCManager:_verify_dlcs()
-    for dlc_name, dlc_data in pairs(Global.dlc_manager.all_dlc_data) do
-		for i, v in pairs(Enabled) do
-			if (i == dlc_name) then
-				if (v == true) then
-					dlc_data.verified = true
-				end
+	for i, v in pairs(Enabled) do
+		if (i == dlc_name) then
+			if (v == true) then
+				dlc_data.verified = true
 			end
 		end
-    end
+	end
+	oldFunc(self)
 end
